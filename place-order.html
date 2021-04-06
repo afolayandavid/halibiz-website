@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <title>Place Orders</title>
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="assets/strawberry.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <section class="section">
+    <h1>Place Orders</h1>
+    <form action="">
+        <div class="container">
+        <table>
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <div class="row">
+            <tr>
+              <div class="input-field col s6 l4">
+                <td>
+                    <select name="" id="">
+                      <option value="">Maaxa 14g</option>
+                      <option value="">Maaxi 12g</option>
+                      <option value="">Himaax 12g</option>
+                    </select>
+                  </td>
+                </div>
+                <td>Eclair</td>
+                <td>$0.87</td>
+              </div>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+            </tr>
+          </tbody>
+        </table>  
+      </form>
+    </div>
+  </section>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      $('.parallax').parallax();
+      $('select').formSelect();
+    });
+  </script>
+</body>
+</html>
